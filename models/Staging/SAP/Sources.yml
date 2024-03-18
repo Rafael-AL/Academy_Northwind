@@ -1,0 +1,17 @@
+
+version: 2
+sources:
+  - name: SAP
+    description: Fonte do ERP da NorthWind
+    database: equatorial
+    schema: raw_northwind
+    tables:
+      - name: product
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+              
+      - name: category
+      - name: supplier
